@@ -1,0 +1,321 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 1em;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  background-image: url(/img/fundo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #e6e6e6;
+  color: #000;
+  
+}
+/*
+******MEU LAYOUT*******/
+#area-cabecalho{
+  background-image: url(/img/3130284-uhd_3840_2160_30fps.mp4);
+  padding: 15px;
+  text-align: center;
+}
+#area-logo, #area-menu{
+  padding: 10px; 
+  
+}
+#area-principal{
+  width: 950px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+#area-postagens{
+  width: 660px;
+  float: left;
+}
+#area-lateral{
+  width: 240px;
+  float: right;
+}
+.postagem{
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+.conteudo-lateral{
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.postagem-lateral{
+  font-size: 1em;
+  padding: 5px;
+  border-bottom: 1px dotted #aaa9a9;
+}
+
+#rodape{
+  clear: both;
+  text-align: center;
+  background: #ccc;
+  padding: 15px;
+}
+/**
+===FORMATAÇÃO DO MENU===**/
+
+#area-cabecalho a:link, #area-cabecalho a:visited{
+  color: #fff;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 22px;
+}
+#area-cabecalho a:hover{
+  color: #f7b600;
+  background: #fff;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+ a:link, a:visited{
+  color: #0307fc;
+
+}
+a:hover{
+  background: #fff;
+  text-decoration: underline;
+  font-size: 20px;
+  border-radius: 5px;
+} 
+/**
+===FORMATAÇÃO GERAL===**/
+
+h1{
+  color: #f7b600;
+  font-size: 3.5em;
+}
+
+h2{
+  color: #f7b600;
+}
+h3{
+  color: #565656;
+  background: #ccc;
+  padding: 5px;
+
+}
+.branco{
+  color: white;
+}
+.data-postagem{
+  font-size: 0.8em;
+  border-bottom: 1px solid #d4d2d2;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+.postagem img {
+  max-width: 100%;
+  height: auto;
+}
+/* Media queries para celulares */
+@media screen and (max-width: 767px) {
+  #area-postagens, #area-lateral {
+    width: 100%; /* Ocupa toda a largura disponível em dispositivos menores */
+  }
+}
+
+/* Media queries para tablets */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #area-postagens {
+    width: 60%; /* Largura ajustável conforme necessário em tablets */
+  }
+
+  #area-lateral {
+    width: 30%; /* Largura ajustável conforme necessário em tablets */
+  }
+}
+
+/* Media queries para notebooks */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #area-postagens {
+    width: 70%; /* Largura ajustável conforme necessário em notebooks */
+  }
+
+  #area-lateral {
+    width: 25%; /* Largura ajustável conforme necessário em notebooks */
+  }
+}
+
+/* Media queries para PCs */
+@media screen and (min-width: 1200px) {
+  #area-postagens {
+    width: 60%; /* Largura ajustável conforme necessário em PCs */
+  }
+
+  #area-lateral {
+    width: 30%; /* Largura ajustável conforme necessário em PCs */
+  }
+}
+/* estilos do rodapé (footer) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  clear: both;
+  text-align: center;
+  background: #111111;
+  padding: 15px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.footer-section h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.socials a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 10px;
+}
+
+.links a {
+  color: #cac4c4;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  
+  
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.text-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #f7b600;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  background-color: #222222;
+  color: #aaa;
+  margin: 5px;
+  font-size: 20px;
+  border-top: 1px solid #2c2b2b;
+
+
+}
+
+.footer-bottom a {
+  color: #c79b09;
+  text-decoration: none;
+  transition: 0.3s ease;
+  
+}
+
+#rodape {
+  background-color: #222;
+  color: #ffff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 920px;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: #fff; /* Adicione a cor de texto que você deseja */
+}
+
+
+
+
